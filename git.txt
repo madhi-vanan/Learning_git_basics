@@ -1,0 +1,115 @@
+1. mkdir {file name }
+$ ls
+$ ls -a 
+$ ls  .git
+
+2.checks for .git {where all the datas will be stored}
+3. creating file touch {touch is the keywords to create the file }
+ $ touch names.txt
+4. git status  this will denoted the changes in the project 
+  $ git status
+5.Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        g.py
+        mad.jpeg
+   
+# this files did recorded their history
+6 git add   this will add the values into line or queue
+  $ git add
+7. commit this will make  changes 
+$ git commit -m "messasge can be write eg comments"
+
+
+#######  adding the values in the files
+
+8. vi {f.name}  this will makes changs inside the file 
+$vi names.txt
+
+9. \\ writing the values
+madhi
+helo
+vankam
+
+#  to exit vi ## {shift +;}+{X}+enter
+  
+10. cat this comment is used to display the values in the files
+$ cat names.txt
+
+
+####
+
+11. restore     this will restore the file back to the queue {that photo line}
+$ git restore --staged m.txt
+
+
+### check the history of the project 
+
+12. log    entire history of the commit can be viewed
+$ git log 
+//
+
+commit 12bc72e6754cfa40eff47b9f98a21cd06dca4d52 (HEAD -> master)
+Author: madhi-vanan <madhivanan27112002@gmail.com>
+Date:   Thu Apr 25 19:47:54 2024 +0530
+
+    adding
+
+commit 940c555ff6c267cd87811416c95e31bc1956e140
+Author: madhi-vanan <madhivanan27112002@gmail.com>
+Date:   Thu Apr 25 19:39:51 2024 +0530
+
+    all are addded
+
+commit 547a8ed7001ea191db57ed5954c6a8c81e966c46
+Author: madhi-vanan <madhivanan27112002@gmail.com>
+Date:   Thu Apr 25 13:39:14 2024 +0530
+
+    names.txt added
+//
+
+13. rm  -rf names.txt   remove the files
+$ rm names.txt
+
+
+// 
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   m.txt
+        deleted:    names.txt
+
+14. git add .
+15 git commit -m "comment"
+
+
+
+######  restoring the files from where we wanted
+
+16. git reset   this will restore the values from where we wanted
+ $ git reset {  from where i wanted eg. this commit was recored onn the starting} 547a8ed7001ea191db57ed5954c6a8c81e966c46
+
+
+##   remove all the commmit
+
+17. git stash this will remove all the commitement
+$ git stash
+
+18. pop  this will points all the changes that are maded
+$ git stash pop 
+
+19. git stash clear
+
+
+
+## dive into github
+
+
+1.  create repository {new}
+
+2 save the url of the repository
+
+3.$ git  remote add origin https://github.com/madhi-vanan/new.git
+
+4. git remote -v
+origin  https://github.com/madhi-vanan/new.git (fetch)
+origin  https://github.com/madhi-vanan/new.git (push)
